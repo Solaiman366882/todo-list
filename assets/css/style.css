@@ -1,0 +1,94 @@
+h1 {
+    text-align: center;
+    color: #50475E;
+    font-family: cursive;
+    margin: 20px auto;
+    font-size: 45px;
+}
+ul{
+    list-style: none;
+}
+.input-area {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+input#task-input {
+    min-width: 300px;
+    min-height: 40px;
+    padding-left: 20px;
+    font-size: 18px;
+    border: 1px solid #75C3AA;
+    border-radius: 6px;
+}
+button#add-btn {
+    padding: 0 20px;
+    background: transparent;
+    border: 2px solid #42C399;
+    border-radius: 6px;
+    color: #42C399;
+    font-size: 16px;
+}
+section.task-section {
+    background: #0C356A;
+    color: #fafafa;
+    padding: 30px 20px;
+    margin: 25px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 20px;
+}
+.list-header {
+    width: 100%;
+}
+.list-header ul{
+    display: flex;
+    justify-content: space-between;
+}
+.list-header ul li{
+    flex: 1;
+    text-align: center;
+}
+.task-header,
+li.single-task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #fafafa;
+    padding: 0 20px;
+}
+li.single-task:last-child {
+    border-bottom: none;
+}
+.task-header div,
+li.single-task div,
+.task-header p,
+li.single-task p,
+.task-header h2,
+li.single-task h2{
+    flex: 1;
+}
+.task-header div,
+li.single-task div,
+.task-header p,
+li.single-task p{
+    flex: 1;
+    text-align: center;
+}
+.btn{
+    padding: 10px 20px;
+    text-transform: capitalize;
+    background: darkgreen;
+    color: #fafafa;
+    border: none;
+    border-radius: 5px;
+}
+.btn#task-delete {
+    background: darkred;
+}
+.action-btn-area {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
