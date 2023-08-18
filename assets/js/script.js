@@ -1,8 +1,9 @@
-document.getElementById('add-btn').addEventListener('click',function(){
+document.getElementById('add-btn').addEventListener('click',function(event){
     const inputValue = document.getElementById('task-input').value;
     const elementCount = document.getElementById('task-list').childElementCount;
     const li = document.createElement('li');
     li.setAttribute('class','single-task');
+    // ${elementCount}
     li.innerHTML = `
         <h2 class="task-number">${elementCount}</h2>
         <p class="task-description"></p>
@@ -15,6 +16,20 @@ document.getElementById('add-btn').addEventListener('click',function(){
     listContainer.appendChild(li);
     document.querySelector('.single-task:last-child > p').innerText = inputValue; 
     document.getElementById('task-input').value = '';
+
+
+
+
+
+    // const lists = document.querySelectorAll('#task-list li');
+    // let count = 1;
+    //  for(list of lists) {
+    //     const h2 = document.querySelector('.single-task > h2');
+    //     h2.innerText = count;
+    //     count++;
+    //     console.log(h2);
+
+    //  }
 });
 function doneCurrentTask(){
     event.target.parentNode.previousElementSibling.style.textDecoration='line-through';
@@ -22,3 +37,6 @@ function doneCurrentTask(){
 function deleteCurrentTask(){
     event.target.parentNode.parentNode.remove();
 };
+// document.getElementById('add-btn').addEventListener('click',function(){
+
+// });
