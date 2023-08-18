@@ -84,7 +84,7 @@ li.single-task p{
     border: none;
     border-radius: 5px;
 }
-.btn#task-delete {
+.task-delete {
     background: darkred;
 }
 .action-btn-area {
